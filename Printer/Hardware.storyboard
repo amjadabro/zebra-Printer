@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hardware View Controller-->
+        <scene sceneID="Em6-C5-OB4">
+            <objects>
+                <viewController storyboardIdentifier="HardwareVCID" id="C7w-pR-yxp" customClass="HardwareViewController" customModule="Garage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d5R-xy-f25">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="845"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EHx-QI-5AB">
+                                <rect key="frame" x="0.0" y="10" width="834" height="845"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zEu-Hv-5ss">
+                                <rect key="frame" x="41.5" y="88.5" width="751" height="169"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c96-W0-vR8">
+                                <rect key="frame" x="41.5" y="52.5" width="225.5" height="33.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqg-Za-YJk">
+                                <rect key="frame" x="270.5" y="52.5" width="45" height="33.5"/>
+                                <state key="normal" image="cancelAddCarScreen"/>
+                                <connections>
+                                    <action selector="printerRemoveBtn:" destination="C7w-pR-yxp" eventType="touchUpInside" id="pq0-bN-3qw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c96-W0-vR8" firstAttribute="centerY" secondItem="zEu-Hv-5ss" secondAttribute="centerY" multiplier="0.4" id="2na-qo-n4a"/>
+                            <constraint firstItem="Rqg-Za-YJk" firstAttribute="height" secondItem="c96-W0-vR8" secondAttribute="height" id="6IG-dL-MiX"/>
+                            <constraint firstItem="c96-W0-vR8" firstAttribute="height" secondItem="zEu-Hv-5ss" secondAttribute="height" multiplier="0.2" id="862-Vh-aAr"/>
+                            <constraint firstItem="c96-W0-vR8" firstAttribute="width" secondItem="zEu-Hv-5ss" secondAttribute="width" multiplier="0.3" id="BXX-9B-hQV"/>
+                            <constraint firstItem="zEu-Hv-5ss" firstAttribute="width" secondItem="d5R-xy-f25" secondAttribute="width" multiplier="0.9" id="Shi-0F-cWZ"/>
+                            <constraint firstItem="zEu-Hv-5ss" firstAttribute="centerX" secondItem="jro-D8-7WF" secondAttribute="centerX" id="UQV-83-N9u"/>
+                            <constraint firstItem="EHx-QI-5AB" firstAttribute="height" secondItem="d5R-xy-f25" secondAttribute="height" id="WBt-oL-439"/>
+                            <constraint firstItem="Rqg-Za-YJk" firstAttribute="centerY" secondItem="c96-W0-vR8" secondAttribute="centerY" id="a9f-xd-SXD"/>
+                            <constraint firstItem="EHx-QI-5AB" firstAttribute="centerY" secondItem="jro-D8-7WF" secondAttribute="centerY" id="fXW-DH-sNZ"/>
+                            <constraint firstItem="zEu-Hv-5ss" firstAttribute="height" secondItem="d5R-xy-f25" secondAttribute="height" multiplier="0.2" id="gae-p0-E98"/>
+                            <constraint firstItem="c96-W0-vR8" firstAttribute="leading" secondItem="zEu-Hv-5ss" secondAttribute="leading" id="jBK-RH-XUh"/>
+                            <constraint firstItem="zEu-Hv-5ss" firstAttribute="centerY" secondItem="jro-D8-7WF" secondAttribute="centerY" multiplier="0.4" id="mVx-d1-naD"/>
+                            <constraint firstItem="EHx-QI-5AB" firstAttribute="width" secondItem="d5R-xy-f25" secondAttribute="width" id="nvH-vL-3k7"/>
+                            <constraint firstItem="Rqg-Za-YJk" firstAttribute="centerX" secondItem="c96-W0-vR8" secondAttribute="centerX" multiplier="1.9" id="oN1-Yk-E7O"/>
+                            <constraint firstItem="Rqg-Za-YJk" firstAttribute="width" secondItem="c96-W0-vR8" secondAttribute="width" multiplier="0.2" id="rxr-Uk-BIX"/>
+                            <constraint firstItem="EHx-QI-5AB" firstAttribute="centerX" secondItem="jro-D8-7WF" secondAttribute="centerX" id="vAD-7j-chP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jro-D8-7WF"/>
+                    </view>
+                    <size key="freeformSize" width="834" height="845"/>
+                    <connections>
+                        <outlet property="printertypelabel" destination="c96-W0-vR8" id="smi-0f-ctR"/>
+                        <outlet property="receiptPrinterTableview" destination="zEu-Hv-5ss" id="eZt-9q-9wq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rV-Mh-umO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.1942446043165473" y="-93.07553956834532"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancelAddCarScreen" width="21" height="21"/>
+    </resources>
+</document>

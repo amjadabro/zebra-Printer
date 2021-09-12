@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Receipt View Controller-->
+        <scene sceneID="WfW-eN-rWw">
+            <objects>
+                <viewController storyboardIdentifier="ReceiptVCID" id="Znf-Sn-oRg" customClass="ReceiptViewController" customModule="Garage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dtn-CP-oX8">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="845"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receipt" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-BG-mK1">
+                                <rect key="frame" x="0.0" y="10" width="834" height="845"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g6D-BG-mK1" firstAttribute="height" secondItem="Dtn-CP-oX8" secondAttribute="height" id="5Ph-RA-4yc"/>
+                            <constraint firstItem="g6D-BG-mK1" firstAttribute="width" secondItem="Dtn-CP-oX8" secondAttribute="width" id="A7W-jO-UOA"/>
+                            <constraint firstItem="g6D-BG-mK1" firstAttribute="centerY" secondItem="yoe-Mc-ylR" secondAttribute="centerY" id="cCN-VZ-OL7"/>
+                            <constraint firstItem="g6D-BG-mK1" firstAttribute="centerX" secondItem="yoe-Mc-ylR" secondAttribute="centerX" id="oeO-Js-w4G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yoe-Mc-ylR"/>
+                    </view>
+                    <size key="freeformSize" width="834" height="845"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOK-u1-Mdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="receipt" width="1862" height="1500"/>
+    </resources>
+</document>
